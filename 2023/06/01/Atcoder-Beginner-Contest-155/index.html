@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>Atcoder Beginner Contest 155 | 雾里梦芮 の Blog</title>
+        <meta name="author" content="Rui_SatuRdAy" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/images/favicon.png" />
+        <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.js"></script>
+<script src="https://cdn.staticfile.org/KaTeX/0.16.4/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.16.4/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 5.4.2"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <div id="loading-circle">
+                        <h2>LOADING</h2>
+                        <p>加载过慢请开启缓存 浏览器默认开启</p>
+                        <img src="/images/loading.gif" />
+                    </div>
+                </div>
+            </transition>
+            <nav id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <div id="desktop-menu">
+        <a class="title" href="/">
+            <span>雾里梦芮 の BLOG</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;首页</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;归档</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;分类</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;标签</span>
+        </a>
+        
+    </div>
+    <div id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;雾里梦芮 の BLOG</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">首页</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">归档</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">分类</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </div>
+</nav>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+            <transition name="into">
+                <div id="main" v-show="!loading">
+                    <div class="article">
+    <div>
+        <h1>Atcoder Beginner Contest 155</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        <span class="category">
+            <a href="/categories/Atcoder/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Atcoder
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h2 id="text-D-Pairs"><a href="#text-D-Pairs" class="headerlink" title="$\text{D\ -\ Pairs}$"></a>$\text{D\ -\ Pairs}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>$n$ 个数两两相乘的结果共有 $\frac{n(n - 1)}{2}$ 种 , 求第 $k$ 小的乘积 .</p>
+<p>输入 $a_i$ 到 $a_n$ .</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>求第 $k$ 小 , 相当于求第 $\frac{n(n - 1)}{2} - k + 1$ 大 .</p>
+<p>考虑二分 , 记该值为 $mid$</p>
+<blockquote>
+<p>当 $mid &lt; 0$ , 则任意 $a_i$ 为整数或 $0$ ,都满足要求 . 然后对于每个 $a_i &gt; 0$ , $a_j &lt; 0$ 的组合是否大于 $mid$ .</p>
+</blockquote>
+<blockquote>
+<p>当 $mid = 0$ , 除了 $a_i &gt; 0$ , $a_j &lt; 0$ 的组合都满足要求 .</p>
+</blockquote>
+<blockquote>
+<p>当 $mid &lt; 0$ , 当 $a_i$ 和 $a_j$ 同号时满足要求 .</p>
+</blockquote>
+<p>复杂度 : $(nlogn)$ .</p>
+<hr>
+<h2 id="text-E-Payment"><a href="#text-E-Payment" class="headerlink" title="$\text{E\ -\ Payment}$"></a>$\text{E\ -\ Payment}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>有 $10^{100} + 1$ 种纸币 , 面值分别为 $10^0$ , $10^1$ , $10^2$ … , $10^{100}$ .</p>
+<p>给定正整数 $n$ , $f(x)$ 表示 $x$ (付的钱) 在十进制下各个数位的和 , 求一个正整数 $x$ , 满足 $x \geq n$ 且最小化 $f(x) + f(x - n)$ .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>$dp$ 一道 , 转移方程如下 :</p>
+<p>$$dp_{i,0} = \min (dp_{i - 1,0} + a_i,dp_{i - 1,1} + a_i + 1)$$</p>
+<p>$$dp_{i,1} = \min (dp_{i - 1,0} + 10 - a_i ,dp_{i - 1,1} + 10 - a_i - 1)$$</p>
+<hr>
+<h2 id="text-F-Perils-in-Parallel"><a href="#text-F-Perils-in-Parallel" class="headerlink" title="$\text{F\ -\ Perils in Parallel}$"></a>$\text{F\ -\ Perils in Parallel}$</h2><h3 id="题面-2"><a href="#题面-2" class="headerlink" title="题面"></a>题面</h3><p>有 $n$ 个电灯 , 编号为 $1$ 到 $n$ , 第 i 个电灯在 $a_i$ 处 , 状态为 $b_i$ ( $1$ 或 $0$ ) .</p>
+<p>有 $m$ 个开关 , 编号为 $1$ 到 $m$ , 第 $i$ 个开关控制 $[l_i,r_i]$ , 如果按下该开关 , 则该区间内电灯状态取反 .</p>
+<p>求是否有可行解 , 使得所有电灯状态为 $0$ . 有则输出方案 , 否则输出 $-1$ .</p>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><p>在 $xor$ 的意义下进行差分 , 那么区间的操作就会变成点的操作 . 即给一个 $0/1$ 串和一些点对 , 将统一对数 $xor\ 1$ , 得到全为 $0$ 的串 .</p>
+<p>既然有点对了 , 那就直接上无向图了 . 即在无向图中选择一些边 , 将这些边 $xor\ 1$ , 问能否得到一张全 $0$ 图 .</p>
+<p>将其简化为一棵树 , 进行搜索 , 用所有与该点对有关系的点对进行修改 . 由于每次操作奇偶性不变 , 所以如果 $xor$ 的值不为 $0$ 则无解 .</p>
+<p>另外 , 差分后 $n + 1$ 对答案是没有影响的 , 所以要先跑一个 $n + 1$ 的情况 .</p>
+<hr>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                    <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 雾里梦芮 の Blog
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;Rui_SatuRdAy
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+                </div>
+            </transition>
+            
+            <transition name="fade">
+                <div id="preview" ref="preview" v-show="previewShow">
+                    <img id="preview-content" ref="previewContent" />
+                </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+        
+
+
+
+
+        
+    </body>
+</html>

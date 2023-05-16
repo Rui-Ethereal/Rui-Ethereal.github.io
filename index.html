@@ -169,6 +169,328 @@
         
 
 <div class="post">
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-151/">
+        <h2 class="post-title">Atcoder Beginner Contest 151</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/Atcoder/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Atcoder
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-E-Max-Min-Sums"><a href="#text-E-Max-Min-Sums" class="headerlink" title="$\text{E\ -\ Max-Min Sums}$"></a>$\text{E\ -\ Max-Min Sums}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>给一个整数集合 $A$ , $\lvert A \rvert = n$ 和一个整数 $k$ .</p>
+<p>求 :</p>
+<p>$$\sum_{S \in A} [ \lvert S \rvert = k]\ f(s)$$</p>
+<p>并对 $10^9 + 7$ 取模 .</p>
+<p>其中 , $f(x) = \max_{x \in S} - \min_{x \in S}$</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>最暴力的方法就是枚举 $C_n^k$ 元素个数为 $k$ 的子集 , 然后找 $Max$ 和 $Min$ , <del>复杂度爆炸</del> .</p>
+<p>考虑集合的无序性 . 将集合中的元素从小到大排序 , 然后计算每个数可能子多少个子集中成为最大值 / 最小值 .</p>
+<p>考虑如何统计作为子集中最大值的次数 :</p>
+<p>对于前 $k - 1$ 个数 , 不可能成为任何子集的最大值 . 对于其它的数 , 第 $i$ 个数成为最大值的可能有 $C_{i - 1}^{k - 1}$ 种 , 即在前 $i - 1$ 个数中选 $k - 1$ 个数 , 与第 $i$ 个数构成子集 , 使其成为最大值 .</p>
+<p>对于最小值 , 同理 .</p>
+<p>记得用逆元 .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #00a596">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-151/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-158/">
+        <h2 class="post-title">Atcoder Beginner Contest 158</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/Atcoder/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Atcoder
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-D-String-Formation"><a href="#text-D-String-Formation" class="headerlink" title="$\text{D\ -\ String Formation}$"></a>$\text{D\ -\ String Formation}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>开始有一个只包含小写字母的字符串 $S$ .</p>
+<p>接下来执行 $Q$ 次操作 , 对于每次操作输入一个数 $T$</p>
+<blockquote>
+<p>如果 $T = 1$ , 将 $S$ 反转 .<br>如果 $T = 2$ , 给定一个数 $F$ 和一个小写字符 $c$</p>
+<blockquote>
+<p>如果 $F = 1$ , 将 $c$ 放在 $S$ 的开头</p>
+</blockquote>
+<blockquote>
+<p>否则放在末尾</p>
+</blockquote>
+</blockquote>
+<p>输出所有操作结束后的字符串 $S$</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>水题一道 . 反转过后 , 两个操作就相当于换一下 . 只需要用一个变量来记录这个字符串是否被反转 , 被反转偶数次相当于没反转 . 注意是反转操作而不是字符串 .</p>
+<hr>
+<h2 id="text-E-Divisible-Substring"><a href="#text-E-Divisible-Substring" class="headerlink" title="$\text{E\ -\ Divisible Substring}$"></a>$\text{E\ -\ Divisible Substring}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定一个质数 $P$ 和一个字符串 $S$ .</p>
+<p>求有多少个 $S$ 的字串 $T$ 满足将 $T$ 视为十进制数后是 $P$ 的倍数 .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>该题关键在于线性求字串数量的方法 . 在大多数情况下 , 如果两个字串所对应的数字 $\bmod\ P$ 所得的余数相等 , 且一个串是另一个的末尾某一段 , 则他们相减后得到的串符合要求 . ( $2$ 和 $5$ 除外 , 需特判 ) .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-158/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-156/">
+        <h2 class="post-title">Atcoder Beginner Contest 156</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/Atcoder/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Atcoder
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-E-Roaming"><a href="#text-E-Roaming" class="headerlink" title="$\text{E\ -\ Roaming}$"></a>$\text{E\ -\ Roaming}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>有 $n$ 个房间 , 开始时每个房间有 $1$ 个人 . 人们可以在各个房间中移动 ( 不能原地移动 ) . 所有人一共移动了 $k$ 次 .</p>
+<p>求最后每个房间的人数排列有多少种情况 .</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>明显的 , 数学题 . 当所有人移动完后 , 人数为 $0$ 的房间最多有 $\min(n - 1 , k)$ 间 . 因此可以枚举移动完后空房子的数量 . 设空房间的数量为 $i$ , 则有 $n - i$ 个非空房间放人 . 在 $n - 1$ 个空中插入 $n - i - 1$ 个板 . 对于每一个 $i$ , 有 :</p>
+<p>$$C_{n}^{i} \times C_{n - 1}^{n - i - 1}$$</p>
+<p>累加即可 . 另外 , 数据较大 , 需要逆元 .</p>
+<hr>
+<h2 id="text-F-Modularness"><a href="#text-F-Modularness" class="headerlink" title="$\text{F\ -\ Modularness}$"></a>$\text{F\ -\ Modularness}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>有一个长度为 $k$ 的序列 , $d_0$ ,$d_1$ , … , $d_{k - 1}$.</p>
+<p>有 $Q$ 次询问 , 每次询问给出三个数 . 同时定义长度为 $n$ 的序列 $a_0$ , $a_1$ , … ,$a_{n - 1}$ . 其中 :</p>
+<p>$$\begin{aligned} a_j = \begin{cases} x_i &amp; ( j = 0 ) \ a_{j - 1} + d_{(j - 1)<del>\textrm{mod}</del>k} &amp; ( 0 &lt; j \leq n - 1 ) \end{cases}\end{aligned}$$</p>
+<p>对于每组询问 , 求有多少个 $j$ 满足 $0 \le j &lt; n - 1$ 且 $(a_j \bmod\ m) &lt; (a_{j+1} \bmod\ m)$ .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>正难则反 , 统计 $a_i \equiv a_{i+1}\ (\bmod\ m)$ 和 $(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ 两种情况的数量 .</p>
+<p>先进行预处理 : 将所有 $d$ 对 $m$ 取模 , 对结果无影响 .</p>
+<p>当 $d_{i \bmod k} = 0$ 时满足第一个条件 .</p>
+<p>$(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ , 因为已经将所有的 $d$ 取模了 , 相当于我们现在进行的是 $m$ 进制运算 .</p>
+<p>一次进位只可能使前一位的值恰好增加 $1$ , 因此我们只需要统计发生了多少次进位即可 .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #ff7d73">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-156/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-157/">
+        <h2 class="post-title">Atcoder Beginner Contest 157</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/Atcoder/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Atcoder
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-D-Friend-Suggestions"><a href="#text-D-Friend-Suggestions" class="headerlink" title="$\text{D\ -\ Friend Suggestions}$"></a>$\text{D\ -\ Friend Suggestions}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>某平台有 $n$ 个用户 , 有 $m$ 对是互相关注的 , 有 $k$ 对是互相拉黑的 .</p>
+<p>对于用户 $i$ 和 $j$ , 当 $i$ 和 $j$ 满足以下条件时 , $j$ 就是 $i$ 的 “ 推荐用户 “ :</p>
+<p>$i$ 和 $j$ 可以通过若干对互相关注的用户连接起来 .</p>
+<p>$i$ 和 $j$ 没有互关或者互黑 .</p>
+<p>求每位用户的 “ 推荐用户 “ 的数量.</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>并查集再加上容斥原理 . 统计有多少人有 “ 推荐用户 “ 关系 , 多少人不能有该关系 , 根据容斥原理 , 答案就是不考虑条件 $2$ 的每个用户的 “ 推荐用户 “ 的数量 , 再扫一遍互关和互黑的人 , 如果连同 , 答案把 $ta$ 们的 “ 推荐用户 “ $- 1$</p>
+<hr>
+<h2 id="text-E-Simple-String-Queries"><a href="#text-E-Simple-String-Queries" class="headerlink" title="$\text{E\ -\ Simple String Queries}$"></a>$\text{E\ -\ Simple String Queries}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定长度为 $n$ 的字符串 $S$ , 以及 $Q$ 次询问 . 其格式如下 :</p>
+<p>输入 $1$ , $i_q$ , $c_q$ , 将 $S$ 的第 $i_q$ , 位字符改为 $c_q$ ;</p>
+<p>输入 $2$ , $l_q$ , $r_q$ , 询问区间 $[l , r]$ 不同的字符个数 .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>开 $26$ 个独立的树状数组 , 每一个存放该字符出现的位置 . 在询问的时候直接询问树状数组 $[l,r]$ 的和 ( $ans$ ) , 如果 $ans &gt; 0$ , 则把 $ans + 1$ 输出即可 .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-157/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-155/">
+        <h2 class="post-title">Atcoder Beginner Contest 155</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/Atcoder/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Atcoder
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-D-Pairs"><a href="#text-D-Pairs" class="headerlink" title="$\text{D\ -\ Pairs}$"></a>$\text{D\ -\ Pairs}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>$n$ 个数两两相乘的结果共有 $\frac{n(n - 1)}{2}$ 种 , 求第 $k$ 小的乘积 .</p>
+<p>输入 $a_i$ 到 $a_n$ .</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>求第 $k$ 小 , 相当于求第 $\frac{n(n - 1)}{2} - k + 1$ 大 .</p>
+<p>考虑二分 , 记该值为 $mid$</p>
+<blockquote>
+<p>当 $mid &lt; 0$ , 则任意 $a_i$ 为整数或 $0$ ,都满足要求 . 然后对于每个 $a_i &gt; 0$ , $a_j &lt; 0$ 的组合是否大于 $mid$ .</p>
+</blockquote>
+<blockquote>
+<p>当 $mid = 0$ , 除了 $a_i &gt; 0$ , $a_j &lt; 0$ 的组合都满足要求 .</p>
+</blockquote>
+<blockquote>
+<p>当 $mid &lt; 0$ , 当 $a_i$ 和 $a_j$ 同号时满足要求 .</p>
+</blockquote>
+<p>复杂度 : $(nlogn)$ .</p>
+<hr>
+<h2 id="text-E-Payment"><a href="#text-E-Payment" class="headerlink" title="$\text{E\ -\ Payment}$"></a>$\text{E\ -\ Payment}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>有 $10^{100} + 1$ 种纸币 , 面值分别为 $10^0$ , $10^1$ , $10^2$ … , $10^{100}$ .</p>
+<p>给定正整数 $n$ , $f(x)$ 表示 $x$ (付的钱) 在十进制下各个数位的和 , 求一个正整数 $x$ , 满足 $x \geq n$ 且最小化 $f(x) + f(x - n)$ .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>$dp$ 一道 , 转移方程如下 :</p>
+<p>$$dp_{i,0} = \min (dp_{i - 1,0} + a_i,dp_{i - 1,1} + a_i + 1)$$</p>
+<p>$$dp_{i,1} = \min (dp_{i - 1,0} + 10 - a_i ,dp_{i - 1,1} + 10 - a_i - 1)$$</p>
+<hr>
+<h2 id="text-F-Perils-in-Parallel"><a href="#text-F-Perils-in-Parallel" class="headerlink" title="$\text{F\ -\ Perils in Parallel}$"></a>$\text{F\ -\ Perils in Parallel}$</h2><h3 id="题面-2"><a href="#题面-2" class="headerlink" title="题面"></a>题面</h3><p>有 $n$ 个电灯 , 编号为 $1$ 到 $n$ , 第 i 个电灯在 $a_i$ 处 , 状态为 $b_i$ ( $1$ 或 $0$ ) .</p>
+<p>有 $m$ 个开关 , 编号为 $1$ 到 $m$ , 第 $i$ 个开关控制 $[l_i,r_i]$ , 如果按下该开关 , 则该区间内电灯状态取反 .</p>
+<p>求是否有可行解 , 使得所有电灯状态为 $0$ . 有则输出方案 , 否则输出 $-1$ .</p>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><p>在 $xor$ 的意义下进行差分 , 那么区间的操作就会变成点的操作 . 即给一个 $0/1$ 串和一些点对 , 将统一对数 $xor\ 1$ , 得到全为 $0$ 的串 .</p>
+<p>既然有点对了 , 那就直接上无向图了 . 即在无向图中选择一些边 , 将这些边 $xor\ 1$ , 问能否得到一张全 $0$ 图 .</p>
+<p>将其简化为一棵树 , 进行搜索 , 用所有与该点对有关系的点对进行修改 . 由于每次操作奇偶性不变 , 所以如果 $xor$ 的值不为 $0$ 则无解 .</p>
+<p>另外 , 差分后 $n + 1$ 对答案是没有影响的 , 所以要先跑一个 $n + 1$ 的情况 .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #ffa2c4">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/Atcoder-Beginner-Contest-155/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2023/05/06/hello-world/">
         <h2 class="post-title">Hello World</h2>
     </a>
