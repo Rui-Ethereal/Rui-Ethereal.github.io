@@ -3,7 +3,7 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>Atcoder Beginner Contest 156 | 雾里梦芮 の Blog</title>
+        <title>Categories: Travel | 雾里梦芮 の Blog</title>
         <meta name="author" content="Rui_SatuRdAy" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -32,10 +32,6 @@
 
 
 <script src="/js/lib/preview.js"></script>
-
-
-
-
 
 
 
@@ -150,20 +146,13 @@
 
             <transition name="into">
                 <div id="main" v-show="!loading">
-                    <div class="article">
-    <div>
-        <h1>Atcoder Beginner Contest 156</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/6/1
-        </span>
+                    <div id="archives">
+    
+    <div class="categories-tags">
         
-        <span class="category">
-            <a href="/categories/Atcoder/">
+        
+        <span>
+            <a href="/categories/Atcoder/" style="background: #03a9f4">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
@@ -172,45 +161,55 @@
         </span>
         
         
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
-            </span>
-            
+        
+        <span>
+            <a href="/categories/Travel/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                Travel
+            </a>
         </span>
+        
+        
+        
         
     </div>
     
-    <div class="content" v-pre>
-        <h2 id="text-E-Roaming"><a href="#text-E-Roaming" class="headerlink" title="$\text{E\ -\ Roaming}$"></a>$\text{E\ -\ Roaming}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>有 $n$ 个房间 , 开始时每个房间有 $1$ 个人 . 人们可以在各个房间中移动 ( 不能原地移动 ) . 所有人一共移动了 $k$ 次 .</p>
-<p>求最后每个房间的人数排列有多少种情况 .</p>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>明显的 , 数学题 . 当所有人移动完后 , 人数为 $0$ 的房间最多有 $\min(n - 1 , k)$ 间 . 因此可以枚举移动完后空房子的数量 . 设空房间的数量为 $i$ , 则有 $n - i$ 个非空房间放人 . 在 $n - 1$ 个空中插入 $n - i - 1$ 个板 . 对于每一个 $i$ , 有 :</p>
-<p>$$C_{n}^{i} \times C_{n - 1}^{n - i - 1}$$</p>
-<p>累加即可 . 另外 , 数据较大 , 需要逆元 .</p>
-<hr>
-<h2 id="text-F-Modularness"><a href="#text-F-Modularness" class="headerlink" title="$\text{F\ -\ Modularness}$"></a>$\text{F\ -\ Modularness}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>有一个长度为 $k$ 的序列 , $d_0$ ,$d_1$ , … , $d_{k - 1}$.</p>
-<p>有 $Q$ 次询问 , 每次询问给出三个数 . 同时定义长度为 $n$ 的序列 $a_0$ , $a_1$ , … ,$a_{n - 1}$ . 其中 :</p>
-<p>$$\begin{aligned} a_j = \begin{cases} x_i &amp; ( j = 0 ) \ a_{j - 1} + d_{(j - 1)\ \textrm{mod}\ k} &amp; ( 0 &lt; j \leq n - 1 ) \end{cases}\end{aligned}$$</p>
-<p>对于每组询问 , 求有多少个 $j$ 满足 $0 \le j &lt; n - 1$ 且 $(a_j \bmod\ m) &lt; (a_{j+1} \bmod\ m)$ .</p>
-<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>正难则反 , 统计 $a_i \equiv a_{i+1}\ (\bmod\ m)$ 和 $(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ 两种情况的数量 .</p>
-<p>先进行预处理 : 将所有 $d$ 对 $m$ 取模 , 对结果无影响 .</p>
-<p>当 $d_{i \bmod k} = 0$ 时满足第一个条件 .</p>
-<p>$(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ , 因为已经将所有的 $d$ 取模了 , 相当于我们现在进行的是 $m$ 进制运算 .</p>
-<p>一次进位只可能使前一位的值恰好增加 $1$ , 因此我们只需要统计发生了多少次进位即可 .</p>
-<hr>
-
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2023/6/4</div>
+            <a href="/2023/06/04/Travel-SH%E6%B8%B8%E8%AE%B0/">
+                <h3>Travel-SH游记</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/Travel/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        Travel
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/%E6%B8%B8%E8%AE%B0/" style="color: #03a9f4">游记</a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
     </div>
-    
-    
-    
-    
-    
-    
     
 </div>
 
@@ -243,12 +242,6 @@
             
         </div>
         <script src="/js/main.js"></script>
-        
-        
-
-
-
-
         
     </body>
 </html>
