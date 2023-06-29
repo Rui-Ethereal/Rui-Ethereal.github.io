@@ -3,7 +3,7 @@
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
-        <title>About | 雾里梦芮 の Blog</title>
+        <title>『做题记录』Atcoder Beginner Contest 157 | 雾里梦芮 の Blog</title>
         <meta name="author" content="Rui_SatuRdAy" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -152,54 +152,53 @@
                 <div id="main" v-show="!loading">
                     <div class="article">
     <div>
-        <h1>About</h1>
+        <h1>『做题记录』Atcoder Beginner Contest 157</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2023/6/27
+            2023/6/1
         </span>
         
+        <span class="category">
+            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                做题记录
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Atcoder/" style="color: #03a9f4">Atcoder</a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        <h2 id="text-Blog简介"><a href="#text-Blog简介" class="headerlink" title="$\text{Blog简介}$"></a>$\text{Blog简介}$</h2><p>本地的文章大多数都会放到博客上 .</p>
-<p>博客主要用来放下面两种文章 ( 不过除了这些其它也没什么可写了吧</p>
-<p>$\text{做题记录}$ : 大多是 $Atcoder$ , 还有洛谷上的一些模板 , 以及自己搓的缺省源 ( 不推荐用</p>
-<p>当然还会有比赛的游记 <del>( 不过就算去了也跟去了似的</del></p>
-<p>但是还是要记录一下捏 $😁$~</p>
-<p>$\text{生活}$ : 有时会发些<del>有趣</del>或者烦心事 , 也相当于是一种情绪的记录与宣泄 ( 这类文章大部分不会上传 ) .</p>
-<p>只不过烦心事就算有 , 我都很少写 , 因为多数情况下在开始写之前早就忘了 . 忘记前则是没心情写 . 也不想麻烦别人 .</p>
-<p><strong>如果有时候很多文章的发布时间是连在一块的 , 一般是之前没上传的文章 , 最近赶出来的 , 这类文章都会写上原本的创作日期 .</strong></p>
+        <h2 id="text-D-Friend-Suggestions"><a href="#text-D-Friend-Suggestions" class="headerlink" title="$\text{D\ -\ Friend Suggestions}$"></a>$\text{D\ -\ Friend Suggestions}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>某平台有 $n$ 个用户 , 有 $m$ 对是互相关注的 , 有 $k$ 对是互相拉黑的 .</p>
+<p>对于用户 $i$ 和 $j$ , 当 $i$ 和 $j$ 满足以下条件时 , $j$ 就是 $i$ 的 “ 推荐用户 “ :</p>
+<p>$i$ 和 $j$ 可以通过若干对互相关注的用户连接起来 .</p>
+<p>$i$ 和 $j$ 没有互关或者互黑 .</p>
+<p>求每位用户的 “ 推荐用户 “ 的数量.</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>并查集再加上容斥原理 . 统计有多少人有 “ 推荐用户 “ 关系 , 多少人不能有该关系 , 根据容斥原理 , 答案就是不考虑条件 $2$ 的每个用户的 “ 推荐用户 “ 的数量 , 再扫一遍互关和互黑的人 , 如果连同 , 答案把 $ta$ 们的 “ 推荐用户 “ $- 1$</p>
 <hr>
-<h2 id="text-访客须知-amp-博主自述"><a href="#text-访客须知-amp-博主自述" class="headerlink" title="$\text{访客须知&amp;博主自述}$"></a>$\text{访客须知&amp;博主自述}$</h2><p>没有 $girlfriend(npy)$ <del>但是有喜欢的人</del></p>
-<p>有时候博主的脾气可能不是太好 , <del>但也不会太好</del> , 只要不是触犯底线或者十分 $zz$ 的事都不会生气 $🥰$ (</p>
-<p><del>说白了就是只要不是没事找事就不会有事</del></p>
-<p>在各大 $OJ$ 上的 $username$ 一般是 $Rui$ 再加上亿点东西</p>
-<p>比如 $Enigma$ , $Saturday$ , $Sakura$ , $Ethereal$ . . .</p>
-<p>笔名&amp;博客名 $雾里梦芮$ ( 至于含义嘛 , 应该很容易猜得到为什么这样取吧 .</p>
-<p>$$——不怎么华丽的分割线 ( 以下主要是自述 )——$$</p>
-<p>坐标 $CQYC$ 初二 ( $2023.9$ 前 )  蒟蒻一个 .</p>
-<p>( 某种意义上 ) 比较文静 , 说的简单点就是喜欢清净 , 不喜欢被打扰 .</p>
-<p>有时候不知道干什么了会胡言乱语的 , 脑子不好使 ( . 所以理解一下啦 $😝$</p>
-<p>不怎么和别人聊天 , 而且就算是聊的也基本上是比较熟悉且不反感的人 <del>( 但是话匣子打开了就知道什么是黄河水收不住🤐</del> .</p>
-<p>没事的时间会练练魔方 , 或者画点画 ( 但是已经很久没画了 <del>因为太忙了</del></p>
-<p>对于博客内的文章有疑问的 , 可以通过联系方式询问 , 我尽力解答 .</p>
-<p>如果发现文章有字打错了或者说知识性错误 , 并且确实如此 , 那么我将挂上你的友链 $😙$ .</p>
-<p><strong>一定要认准本人啊 .</strong></p>
-<p>不知道说什么了 . . . 但是后续会逐渐完善 $QwQ$</p>
+<h2 id="text-E-Simple-String-Queries"><a href="#text-E-Simple-String-Queries" class="headerlink" title="$\text{E\ -\ Simple String Queries}$"></a>$\text{E\ -\ Simple String Queries}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定长度为 $n$ 的字符串 $S$ , 以及 $Q$ 次询问 . 其格式如下 :</p>
+<p>输入 $1$ , $i_q$ , $c_q$ , 将 $S$ 的第 $i_q$ , 位字符改为 $c_q$ ;</p>
+<p>输入 $2$ , $l_q$ , $r_q$ , 询问区间 $[l , r]$ 不同的字符个数 .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>开 $26$ 个独立的树状数组 , 每一个存放该字符出现的位置 . 在询问的时候直接询问树状数组 $[l,r]$ 的和 ( $ans$ ) , 如果 $ans &gt; 0$ , 则把 $ans + 1$ 输出即可 .</p>
 <hr>
-<h2 id="text-联系方式"><a href="#text-联系方式" class="headerlink" title="$\text{联系方式}$"></a>$\text{联系方式}$</h2><p>$QQ$ : 103325164</p>
-<p>$LuoGu$ : sAkUrA_Rui_SaTuRdAy</p>
-<p>$Atcoder$ : Enigma_Rui</p>
-<p>$CodeForces$ : Rui_</p>
-<p>$GitHub$ : Rui-Ethereal</p>
-<p>$Bilibili$ : Rui_Enigma</p>
-<hr>
-<h2 id="text-写在最后"><a href="#text-写在最后" class="headerlink" title="$\text{写在最后}$"></a>$\text{写在最后}$</h2><p>$感谢支持\ (\ 关注的都能找到\ npy$</p>
 
     </div>
     
