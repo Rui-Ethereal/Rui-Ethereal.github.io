@@ -195,7 +195,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <h2 id="text-必要性"><a href="#text-必要性" class="headerlink" title="$\text{必要性}$"></a>$\text{必要性}$</h2><p>总所周助 , 在<del>毒瘤</del>大数据面前 , <code>scanf/printf</code> 很慢 , <code>cin/cout</code> 更慢 . 所以目前有两种主流的快读快写 , <code>getchar/putchar</code> ( <code>putchar</code> 有时甚至不如 <code>printf</code> ) 和 解绑 <code>ios</code> .</p>
+            <h2 id="text-必要性"><a href="#text-必要性" class="headerlink" title="$\text{必要性}$"></a>$\text{必要性}$</h2><p>总所周知 , 在<del>毒瘤</del>大数据面前 , <code>scanf/printf</code> 很慢 , <code>cin/cout</code> 更慢 . 所以目前有两种主流的快读快写 , <code>getchar/putchar</code> ( <code>putchar</code> 有时甚至不如 <code>printf</code> ) 和 解绑 <code>ios</code> .</p>
 <p>至于 <code>cin/cout</code> ( 不解绑的情况下 ) 为什么慢 , 这里不多阐述 <del>( 也相信你点进来不是为了这个 )</del> .</p>
 <p>顺便一提 , 在某些评测姬上 , 解绑 <code>cin/cout</code> 特别能吃 $buff$ , 在处理字符上比 <code>fread/fwrite</code> 快了不知道多少 . $→$ 刷题时 $2e7$ 范围的字符 , $T$ 了三个点 , 后来才发现是 <code>fread/fwrite</code> 太<del>酷</del>慢啦 !</p>
 <hr>
@@ -268,7 +268,7 @@ fwrite :
         
         <span class="tag">
             
-            <a href="/tags/fread-fwrite/" style="color: #00bcd4">fread/fwrite</a>
+            <a href="/tags/fread-fwrite/" style="color: #ffa2c4">fread/fwrite</a>
         </span>
         
     </div>
@@ -276,8 +276,8 @@ fwrite :
 </div>
 
 <div class="post">
-    <a href="/2023/06/28/%E3%80%8E%E6%9D%82%E9%A1%B9-OI%E3%80%8F%E7%A0%81%E9%A3%8E%E4%B9%A0%E6%83%AF%E5%88%86%E4%BA%AB/">
-        <h2 class="post-title">码风习惯分享</h2>
+    <a href="/2023/06/20/%E3%80%8E%E6%9D%82%E9%A1%B9-OI%E3%80%8F%E7%A0%81%E9%A3%8E%E4%B9%A0%E6%83%AF%E5%88%86%E4%BA%AB/">
+        <h2 class="post-title">『杂项-OI』码风习惯分享</h2>
     </a>
     <div class="category-and-date">
         
@@ -294,7 +294,7 @@ fwrite :
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2023/6/28
+            2023/6/20
         </span>
         
         
@@ -327,6 +327,19 @@ fwrite :
 using Rui_Ethereal::SIZE;
 using Rui_Ethereal::ToDoSomething;
 </code></pre>
+<h2 id="text-主函数main"><a href="#text-主函数main" class="headerlink" title="$\text{主函数main}$"></a>$\text{主函数main}$</h2><pre><code class="cpp">signed main() &#123;
+
+    return 0;
+&#125;
+</code></pre>
+<h2 id="text-缩进-and-括号风格"><a href="#text-缩进-and-括号风格" class="headerlink" title="$\text{缩进 and 括号风格}$"></a>$\text{缩进 and 括号风格}$</h2><p>这部分很复杂 , 请自行看下列代码 :</p>
+<pre><code class="cpp">// 空格
+template &lt;typename T&gt;
+inline auto ToDo(T &amp;variable) -&gt; &#123;
+    // to do somgthing
+&#125;
+inline auto ToDo(void) -&gt; void &#123; cout &lt;&lt; &quot;Welcome!\n&quot; &#125;
+</code></pre>
 
             
         </div>
@@ -340,15 +353,15 @@ using Rui_Ethereal::ToDoSomething;
         
         <span class="tag">
             
-            <a href="/tags/%E7%A0%81%E9%A3%8E/" style="color: #00a596">码风</a>
+            <a href="/tags/%E7%A0%81%E9%A3%8E/" style="color: #ffa2c4">码风</a>
         </span>
         
     </div>
-    <a href="/2023/06/28/%E3%80%8E%E6%9D%82%E9%A1%B9-OI%E3%80%8F%E7%A0%81%E9%A3%8E%E4%B9%A0%E6%83%AF%E5%88%86%E4%BA%AB/" class="go-post">阅读全文</a>
+    <a href="/2023/06/20/%E3%80%8E%E6%9D%82%E9%A1%B9-OI%E3%80%8F%E7%A0%81%E9%A3%8E%E4%B9%A0%E6%83%AF%E5%88%86%E4%BA%AB/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
-    <a href="/2023/06/04/%E3%80%8ETravel%E3%80%8F-SH%E6%B8%B8%E8%AE%B0/">
+    <a href="/2023/06/04/%E3%80%8ETravel%E3%80%8FSH%E6%B8%B8%E8%AE%B0/">
         <h2 class="post-title">『Travel』-SH游记</h2>
     </a>
     <div class="category-and-date">
@@ -453,11 +466,11 @@ using Rui_Ethereal::ToDoSomething;
         
         <span class="tag">
             
-            <a href="/tags/%E6%B8%B8%E8%AE%B0/" style="color: #03a9f4">游记</a>
+            <a href="/tags/%E6%B8%B8%E8%AE%B0/" style="color: #ffa2c4">游记</a>
         </span>
         
     </div>
-    <a href="/2023/06/04/%E3%80%8ETravel%E3%80%8F-SH%E6%B8%B8%E8%AE%B0/" class="go-post">阅读全文</a>
+    <a href="/2023/06/04/%E3%80%8ETravel%E3%80%8FSH%E6%B8%B8%E8%AE%B0/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
@@ -512,11 +525,198 @@ using Rui_Ethereal::ToDoSomething;
         
         <span class="tag">
             
-            <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
+            <a href="/tags/Atcoder/" style="color: #03a9f4">Atcoder</a>
         </span>
         
     </div>
     <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-151/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-156/">
+        <h2 class="post-title">『做题记录』Atcoder Beginner Contest 156</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                做题记录
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-E-Roaming"><a href="#text-E-Roaming" class="headerlink" title="$\text{E\ -\ Roaming}$"></a>$\text{E\ -\ Roaming}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>有 $n$ 个房间 , 开始时每个房间有 $1$ 个人 . 人们可以在各个房间中移动 ( 不能原地移动 ) . 所有人一共移动了 $k$ 次 .</p>
+<p>求最后每个房间的人数排列有多少种情况 .</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>明显的 , 数学题 . 当所有人移动完后 , 人数为 $0$ 的房间最多有 $\min(n - 1 , k)$ 间 . 因此可以枚举移动完后空房子的数量 . 设空房间的数量为 $i$ , 则有 $n - i$ 个非空房间放人 . 在 $n - 1$ 个空中插入 $n - i - 1$ 个板 . 对于每一个 $i$ , 有 :</p>
+<p>$$C_{n}^{i} \times C_{n - 1}^{n - i - 1}$$</p>
+<p>累加即可 . 另外 , 数据较大 , 需要逆元 .</p>
+<hr>
+<h2 id="text-F-Modularness"><a href="#text-F-Modularness" class="headerlink" title="$\text{F\ -\ Modularness}$"></a>$\text{F\ -\ Modularness}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>有一个长度为 $k$ 的序列 , $d_0$ ,$d_1$ , … , $d_{k - 1}$.</p>
+<p>有 $Q$ 次询问 , 每次询问给出三个数 . 同时定义长度为 $n$ 的序列 $a_0$ , $a_1$ , … ,$a_{n - 1}$ . 其中 :</p>
+<p>$$\begin{aligned} a_j = \begin{cases} x_i &amp; ( j = 0 ) \ a_{j - 1} + d_{(j - 1)\ \textrm{mod}\ k} &amp; ( 0 &lt; j \leq n - 1 ) \end{cases}\end{aligned}$$</p>
+<p>对于每组询问 , 求有多少个 $j$ 满足 $0 \le j &lt; n - 1$ 且 $(a_j \bmod\ m) &lt; (a_{j+1} \bmod\ m)$ .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>正难则反 , 统计 $a_i \equiv a_{i+1}\ (\bmod\ m)$ 和 $(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ 两种情况的数量 .</p>
+<p>先进行预处理 : 将所有 $d$ 对 $m$ 取模 , 对结果无影响 .</p>
+<p>当 $d_{i \bmod k} = 0$ 时满足第一个条件 .</p>
+<p>$(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ , 因为已经将所有的 $d$ 取模了 , 相当于我们现在进行的是 $m$ 进制运算 .</p>
+<p>一次进位只可能使前一位的值恰好增加 $1$ , 因此我们只需要统计发生了多少次进位即可 .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #00a596">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-156/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-157/">
+        <h2 class="post-title">『做题记录』Atcoder Beginner Contest 157</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                做题记录
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-D-Friend-Suggestions"><a href="#text-D-Friend-Suggestions" class="headerlink" title="$\text{D\ -\ Friend Suggestions}$"></a>$\text{D\ -\ Friend Suggestions}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>某平台有 $n$ 个用户 , 有 $m$ 对是互相关注的 , 有 $k$ 对是互相拉黑的 .</p>
+<p>对于用户 $i$ 和 $j$ , 当 $i$ 和 $j$ 满足以下条件时 , $j$ 就是 $i$ 的 “ 推荐用户 “ :</p>
+<p>$i$ 和 $j$ 可以通过若干对互相关注的用户连接起来 .</p>
+<p>$i$ 和 $j$ 没有互关或者互黑 .</p>
+<p>求每位用户的 “ 推荐用户 “ 的数量.</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>并查集再加上容斥原理 . 统计有多少人有 “ 推荐用户 “ 关系 , 多少人不能有该关系 , 根据容斥原理 , 答案就是不考虑条件 $2$ 的每个用户的 “ 推荐用户 “ 的数量 , 再扫一遍互关和互黑的人 , 如果连同 , 答案把 $ta$ 们的 “ 推荐用户 “ $- 1$</p>
+<hr>
+<h2 id="text-E-Simple-String-Queries"><a href="#text-E-Simple-String-Queries" class="headerlink" title="$\text{E\ -\ Simple String Queries}$"></a>$\text{E\ -\ Simple String Queries}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定长度为 $n$ 的字符串 $S$ , 以及 $Q$ 次询问 . 其格式如下 :</p>
+<p>输入 $1$ , $i_q$ , $c_q$ , 将 $S$ 的第 $i_q$ , 位字符改为 $c_q$ ;</p>
+<p>输入 $2$ , $l_q$ , $r_q$ , 询问区间 $[l , r]$ 不同的字符个数 .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>开 $26$ 个独立的树状数组 , 每一个存放该字符出现的位置 . 在询问的时候直接询问树状数组 $[l,r]$ 的和 ( $ans$ ) , 如果 $ans &gt; 0$ , 则把 $ans + 1$ 输出即可 .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #ffa2c4">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-157/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-158/">
+        <h2 class="post-title">『做题记录』Atcoder Beginner Contest 158</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                做题记录
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="text-D-String-Formation"><a href="#text-D-String-Formation" class="headerlink" title="$\text{D\ -\ String Formation}$"></a>$\text{D\ -\ String Formation}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>开始有一个只包含小写字母的字符串 $S$ .</p>
+<p>接下来执行 $Q$ 次操作 , 对于每次操作输入一个数 $T$</p>
+<blockquote>
+<p>如果 $T = 1$ , 将 $S$ 反转 .<br>如果 $T = 2$ , 给定一个数 $F$ 和一个小写字符 $c$</p>
+<blockquote>
+<p>如果 $F = 1$ , 将 $c$ 放在 $S$ 的开头</p>
+</blockquote>
+<blockquote>
+<p>否则放在末尾</p>
+</blockquote>
+</blockquote>
+<p>输出所有操作结束后的字符串 $S$</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>水题一道 . 反转过后 , 两个操作就相当于换一下 . 只需要用一个变量来记录这个字符串是否被反转 , 被反转偶数次相当于没反转 . 注意是反转操作而不是字符串 .</p>
+<hr>
+<h2 id="text-E-Divisible-Substring"><a href="#text-E-Divisible-Substring" class="headerlink" title="$\text{E\ -\ Divisible Substring}$"></a>$\text{E\ -\ Divisible Substring}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定一个质数 $P$ 和一个字符串 $S$ .</p>
+<p>求有多少个 $S$ 的字串 $T$ 满足将 $T$ 视为十进制数后是 $P$ 的倍数 .</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>该题关键在于线性求字串数量的方法 . 在大多数情况下 , 如果两个字串所对应的数字 $\bmod\ P$ 所得的余数相等 , 且一个串是另一个的末尾某一段 , 则他们相减后得到的串符合要求 . ( $2$ 和 $5$ 除外 , 需特判 ) .</p>
+<hr>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-158/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
@@ -588,198 +788,11 @@ using Rui_Ethereal::ToDoSomething;
         
         <span class="tag">
             
-            <a href="/tags/Atcoder/" style="color: #03a9f4">Atcoder</a>
+            <a href="/tags/Atcoder/" style="color: #00bcd4">Atcoder</a>
         </span>
         
     </div>
     <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-155/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-156/">
-        <h2 class="post-title">『做题记录』Atcoder Beginner Contest 156</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                做题记录
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/6/1
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="text-E-Roaming"><a href="#text-E-Roaming" class="headerlink" title="$\text{E\ -\ Roaming}$"></a>$\text{E\ -\ Roaming}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>有 $n$ 个房间 , 开始时每个房间有 $1$ 个人 . 人们可以在各个房间中移动 ( 不能原地移动 ) . 所有人一共移动了 $k$ 次 .</p>
-<p>求最后每个房间的人数排列有多少种情况 .</p>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>明显的 , 数学题 . 当所有人移动完后 , 人数为 $0$ 的房间最多有 $\min(n - 1 , k)$ 间 . 因此可以枚举移动完后空房子的数量 . 设空房间的数量为 $i$ , 则有 $n - i$ 个非空房间放人 . 在 $n - 1$ 个空中插入 $n - i - 1$ 个板 . 对于每一个 $i$ , 有 :</p>
-<p>$$C_{n}^{i} \times C_{n - 1}^{n - i - 1}$$</p>
-<p>累加即可 . 另外 , 数据较大 , 需要逆元 .</p>
-<hr>
-<h2 id="text-F-Modularness"><a href="#text-F-Modularness" class="headerlink" title="$\text{F\ -\ Modularness}$"></a>$\text{F\ -\ Modularness}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>有一个长度为 $k$ 的序列 , $d_0$ ,$d_1$ , … , $d_{k - 1}$.</p>
-<p>有 $Q$ 次询问 , 每次询问给出三个数 . 同时定义长度为 $n$ 的序列 $a_0$ , $a_1$ , … ,$a_{n - 1}$ . 其中 :</p>
-<p>$$\begin{aligned} a_j = \begin{cases} x_i &amp; ( j = 0 ) \ a_{j - 1} + d_{(j - 1)\ \textrm{mod}\ k} &amp; ( 0 &lt; j \leq n - 1 ) \end{cases}\end{aligned}$$</p>
-<p>对于每组询问 , 求有多少个 $j$ 满足 $0 \le j &lt; n - 1$ 且 $(a_j \bmod\ m) &lt; (a_{j+1} \bmod\ m)$ .</p>
-<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>正难则反 , 统计 $a_i \equiv a_{i+1}\ (\bmod\ m)$ 和 $(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ 两种情况的数量 .</p>
-<p>先进行预处理 : 将所有 $d$ 对 $m$ 取模 , 对结果无影响 .</p>
-<p>当 $d_{i \bmod k} = 0$ 时满足第一个条件 .</p>
-<p>$(a_i \bmod\ m) &gt; (a_{i+1} \bmod m)$ , 因为已经将所有的 $d$ 取模了 , 相当于我们现在进行的是 $m$ 进制运算 .</p>
-<p>一次进位只可能使前一位的值恰好增加 $1$ , 因此我们只需要统计发生了多少次进位即可 .</p>
-<hr>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Atcoder/" style="color: #ff7d73">Atcoder</a>
-        </span>
-        
-    </div>
-    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-156/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-157/">
-        <h2 class="post-title">『做题记录』Atcoder Beginner Contest 157</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                做题记录
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/6/1
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="text-D-Friend-Suggestions"><a href="#text-D-Friend-Suggestions" class="headerlink" title="$\text{D\ -\ Friend Suggestions}$"></a>$\text{D\ -\ Friend Suggestions}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>某平台有 $n$ 个用户 , 有 $m$ 对是互相关注的 , 有 $k$ 对是互相拉黑的 .</p>
-<p>对于用户 $i$ 和 $j$ , 当 $i$ 和 $j$ 满足以下条件时 , $j$ 就是 $i$ 的 “ 推荐用户 “ :</p>
-<p>$i$ 和 $j$ 可以通过若干对互相关注的用户连接起来 .</p>
-<p>$i$ 和 $j$ 没有互关或者互黑 .</p>
-<p>求每位用户的 “ 推荐用户 “ 的数量.</p>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>并查集再加上容斥原理 . 统计有多少人有 “ 推荐用户 “ 关系 , 多少人不能有该关系 , 根据容斥原理 , 答案就是不考虑条件 $2$ 的每个用户的 “ 推荐用户 “ 的数量 , 再扫一遍互关和互黑的人 , 如果连同 , 答案把 $ta$ 们的 “ 推荐用户 “ $- 1$</p>
-<hr>
-<h2 id="text-E-Simple-String-Queries"><a href="#text-E-Simple-String-Queries" class="headerlink" title="$\text{E\ -\ Simple String Queries}$"></a>$\text{E\ -\ Simple String Queries}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定长度为 $n$ 的字符串 $S$ , 以及 $Q$ 次询问 . 其格式如下 :</p>
-<p>输入 $1$ , $i_q$ , $c_q$ , 将 $S$ 的第 $i_q$ , 位字符改为 $c_q$ ;</p>
-<p>输入 $2$ , $l_q$ , $r_q$ , 询问区间 $[l , r]$ 不同的字符个数 .</p>
-<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>开 $26$ 个独立的树状数组 , 每一个存放该字符出现的位置 . 在询问的时候直接询问树状数组 $[l,r]$ 的和 ( $ans$ ) , 如果 $ans &gt; 0$ , 则把 $ans + 1$ 输出即可 .</p>
-<hr>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Atcoder/" style="color: #00a596">Atcoder</a>
-        </span>
-        
-    </div>
-    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-157/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-158/">
-        <h2 class="post-title">『做题记录』Atcoder Beginner Contest 158</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                做题记录
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/6/1
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="text-D-String-Formation"><a href="#text-D-String-Formation" class="headerlink" title="$\text{D\ -\ String Formation}$"></a>$\text{D\ -\ String Formation}$</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p>开始有一个只包含小写字母的字符串 $S$ .</p>
-<p>接下来执行 $Q$ 次操作 , 对于每次操作输入一个数 $T$</p>
-<blockquote>
-<p>如果 $T = 1$ , 将 $S$ 反转 .<br>如果 $T = 2$ , 给定一个数 $F$ 和一个小写字符 $c$</p>
-<blockquote>
-<p>如果 $F = 1$ , 将 $c$ 放在 $S$ 的开头</p>
-</blockquote>
-<blockquote>
-<p>否则放在末尾</p>
-</blockquote>
-</blockquote>
-<p>输出所有操作结束后的字符串 $S$</p>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>水题一道 . 反转过后 , 两个操作就相当于换一下 . 只需要用一个变量来记录这个字符串是否被反转 , 被反转偶数次相当于没反转 . 注意是反转操作而不是字符串 .</p>
-<hr>
-<h2 id="text-E-Divisible-Substring"><a href="#text-E-Divisible-Substring" class="headerlink" title="$\text{E\ -\ Divisible Substring}$"></a>$\text{E\ -\ Divisible Substring}$</h2><h3 id="题面-1"><a href="#题面-1" class="headerlink" title="题面"></a>题面</h3><p>给定一个质数 $P$ 和一个字符串 $S$ .</p>
-<p>求有多少个 $S$ 的字串 $T$ 满足将 $T$ 视为十进制数后是 $P$ 的倍数 .</p>
-<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>该题关键在于线性求字串数量的方法 . 在大多数情况下 , 如果两个字串所对应的数字 $\bmod\ P$ 所得的余数相等 , 且一个串是另一个的末尾某一段 , 则他们相减后得到的串符合要求 . ( $2$ 和 $5$ 除外 , 需特判 ) .</p>
-<hr>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Atcoder/" style="color: #03a9f4">Atcoder</a>
-        </span>
-        
-    </div>
-    <a href="/2023/06/01/%E3%80%8E%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95%E3%80%8FAtcoder-Beginner-Contest-158/" class="go-post">阅读全文</a>
 </div>
 
 
