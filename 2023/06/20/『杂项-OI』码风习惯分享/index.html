@@ -179,7 +179,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E7%A0%81%E9%A3%8E/" style="color: #03a9f4">码风</a>
+                <a href="/tags/%E7%A0%81%E9%A3%8E/" style="color: #00bcd4">码风</a>
             </span>
             
         </span>
@@ -187,10 +187,12 @@
     </div>
     
     <div class="content" v-pre>
-        <h2 id="text-前言"><a href="#text-前言" class="headerlink" title="$\text{前言}$"></a>$\text{前言}$</h2><p>在刷题的过程中 , 我们会见到各<del>逝</del>式各样的码风 . 当然不乏有些 “ 非主流 “ : 比如极为玄学的 $3$ 格缩进 ( 但是我有时候感觉还挺好看的的 ( 雾 ) , 以及看半天看不到一个空格分开语句 / 表达式的 “ 紧凑代码 “ , 还有从 $a$ 命名到 $z$ 的 “ 屎山代码 “ ( “屎山” 其实有很多方面 , 只是这点我很不能忍受 ) . 当然 , 码风习惯因人而异 , 自己觉得好看的码风或许在别人眼中十分另类 .</p>
+        <h2 id="text-前言"><a href="#text-前言" class="headerlink" title="$\text{前言}$"></a>$\text{前言}$</h2><p>在刷题的过程中 , 我们会见到各<del>逝</del>式各样的码风 . 当然不乏有些「非主流」( 个人认为 , 不喜勿喷 ) :</p>
+<p>比如极为玄学的 $3$ 格缩进 ( 但是我有时候感觉<strong>还挺好看的</strong> ( 雾 , 以及看半天看不到一个空格分开语句 / 表达式的「紧凑代码」 , 还有从 $a$ 命名到 $z$ 的「屎山代码」( “屎山” 其实有很多方面 , 只是这点我很不能忍受 ) .</p>
+<p>当然 , 码风习惯<strong>因人而异</strong> , 自己觉得好看的码风或许在别人眼中十分另类 .</p>
 <p><strong>所以我的码风如果有不满意的地方别乱喷 . ( 😖</strong></p>
 <hr>
-<h2 id="text-头文件"><a href="#text-头文件" class="headerlink" title="$\text{头文件}$"></a>$\text{头文件}$</h2><p>以前是用万能头 , 现在的话是要用什么写什么 . 尽量避免命名冲突导致 $CE$ .</p>
+<h3 id="text-头文件"><a href="#text-头文件" class="headerlink" title="$\text{头文件}$"></a>$\text{头文件}$</h3><p>以前是用万能头 , 现在的话是要用什么写什么 . 尽量避免命名冲突导致 $CE$ ( $22$ 年 $CSP-S$ 就是因为命名 $CE$ 两道题 , 关键是当时并不知道那玩意是关键字 , $dev$ 滚一边去 ) .</p>
 <p>另外 , 在 <code>include</code> 之后会打一个 <code>&#39; &#39;</code> . 并且 , 采用 $C++$ 风格头文件 .</p>
 <p>$\text{Example :}$</p>
 <pre><code class="cpp">#include &lt;bits/stdc++.h&gt; // 已弃用
@@ -198,7 +200,8 @@
 #include &lt;ctime&gt;
 #include &lt;string&gt;
 </code></pre>
-<h2 id="text-using-语句"><a href="#text-using-语句" class="headerlink" title="$\text{using 语句}$"></a>$\text{using 语句}$</h2><p>直接写 <code>using namespace std</code> , 用自己写的 <code>namespace</code> 时 , 一般写 <code>using 命名空间名::变量/函数/其它</code> . ( 毕竟用不了那么多 , 要是都用写 <code>namespace</code> 干嘛 ) .</p>
+<hr>
+<h3 id="text-using-语句"><a href="#text-using-语句" class="headerlink" title="$\text{using 语句}$"></a>$\text{using 语句}$</h3><p>直接写 <code>using namespace std</code> , 用自己写的 <code>namespace</code> 时 , 一般写 <code>using 命名空间名::变量/函数/其它</code> . ( 毕竟用不了那么多 , 要是都用写 <code>namespace</code> 干嘛 ) .</p>
 <p>如果 <code>using</code> 能写在 <code>namespace</code> 的 <code>&#39;&#125;&#39;</code> 后面且只需要一句 , 那么就写在这后面 , 细节见下列代码 .</p>
 <p>$\text{Example :}$</p>
 <pre><code class="cpp">namespace Rui_Ethereal &#123;
@@ -212,20 +215,56 @@
 using Rui_Ethereal::SIZE;
 using Rui_Ethereal::ToDoSomething;
 </code></pre>
-<h2 id="text-主函数main"><a href="#text-主函数main" class="headerlink" title="$\text{主函数main}$"></a>$\text{主函数main}$</h2><pre><code class="cpp">signed main() &#123;
-
+<p>偶尔用其代替 <code>#define</code> 或 <code>typedef</code> .</p>
+<hr>
+<h3 id="text-主函数main"><a href="#text-主函数main" class="headerlink" title="$\text{主函数main}$"></a>$\text{主函数main}$</h3><pre><code class="cpp">signed main() &#123;
     return 0;
+    // 有时候不会加返回值 .
 &#125;
 </code></pre>
-<h2 id="text-缩进-and-括号风格"><a href="#text-缩进-and-括号风格" class="headerlink" title="$\text{缩进 and 括号风格}$"></a>$\text{缩进 and 括号风格}$</h2><p>这部分很复杂 , 请自行看下列代码 :</p>
-<pre><code class="cpp">// 空格
-template &lt;typename T&gt;
-inline auto ToDo(T &amp;variable) -&gt; &#123;
-    // to do somgthing
+<p>返回类型用 <code>signed</code> 而不用 <code>int</code> .</p>
+<hr>
+<h3 id="text-缩进-and-括号风格"><a href="#text-缩进-and-括号风格" class="headerlink" title="$\text{缩进 and 括号风格}$"></a>$\text{缩进 and 括号风格}$</h3><p>1 . 采用 $4$ 个空格缩进而不是 <code>TAB</code> .</p>
+<p>2 . 能不加大括号就不加大括号 .</p>
+<pre><code class="cpp">if(条件式) DoSomething; // 只有一条语句那么不加大括号
+else &#123;
+    DoThis;
+    DoThat;
+    // 不止一条语句
 &#125;
-inline auto ToDo(void) -&gt; void &#123; cout &lt;&lt; &quot;Welcome!\n&quot; &#125;
-
 </code></pre>
+<p>3 . 函数写法 : </p>
+<pre><code class="cpp">auto 函数名(参数) -&gt; 返回类型;
+</code></pre>
+<p><strong>有必要</strong>的话会写 <code>inline</code> . 空参写 <code>void</code> , 调用时不写 .</p>
+<p><del>缺点 : 有时候忘写返回类型 CE</del></p>
+<p>4 . 函数主体 ( 非 <code>template</code> 部分或者其它 ) 要么写一行 ( 即一条语句 ) , 要么不少于 $4$ 行 ( 包括结束时的 <code>&#125;</code> ) .</p>
+<pre><code class="cpp">template &lt;typename _Tp&gt;
+inline auto Max(const _Tp &amp;a,const _Tp &amp;b) -&gt; _Tp &#123; return a &lt; b ? b : a; &#125;
+</code></pre>
+<pre><code class="cpp">inline auto GetChar(void) -&gt; char &#123;
+    if(in_ptr == end_addr) &#123;
+        in_ptr = buffer;
+        end_addr = ibuffer + fread(buffer,1,CACHE,stdin);
+    &#125;
+    return in_ptr == end_addr ? EOF : *in_ptr++;
+&#125;
+</code></pre>
+<p>5 . 不<strong>刻意</strong>压行 , 三目除外 , 并且能用三目且比较好写的话就用三目 . ( <code>?:</code> )</p>
+<p>6 . 空格规范 :</p>
+<p><strong>特殊写法</strong></p>
+<p>( $1$ ) <code>for(auto _((BEGIN));_ &lt;= END;++_)</code></p>
+<p>( $2$ ) <code>for(auto &amp;v : G[u])</code></p>
+<p>( $3$ ) <code>&#123;</code> 与 <code>&#125;</code> 不在同一行 , <code>&#123;</code> 前加空格 . 反之 , <code>&#123;</code> 两边都要加 , <code>&#125;</code> 前加后不加 .</p>
+<p>( $4$ ) <code>&amp;&amp;</code> 和 <code>||</code> 一般用 <code>and</code> 和 <code>or</code> 代替 .</p>
+<p>前后<strong>都要</strong>加空格 : </p>
+<p><code>+</code> , <code>-</code> , <code>*</code> , <code>/</code> , <code>+=</code> , <code>-=</code> , <code>*=</code> , <code>/=</code> , <code>==</code> , <code>!=</code> 等 .</p>
+<p>二进制运算符 <code>&amp;</code> , <code>|</code> , <code>^</code> , <code>&lt;&lt;</code> , <code>&gt;&gt;</code> , <code>&amp;=</code> , <code>|=</code> , <code>^=</code> , <code>&lt;&lt;=</code> , <code>&gt;&gt;=</code> .</p>
+<p>三目运算符 <code>? :</code></p>
+<p><strong>前</strong>加<strong>后</strong>不加 :</p>
+<p><code>&amp;</code> ( 作为<strong>地址</strong>运算符 ) , <code>*</code> ( 指针运算符 )</p>
+<p><strong>前后都不加</strong> :</p>
+<p><code>::</code> ( 作用域解析符 ) , <code>,</code> , <code>;</code> , <code>.</code> ( 成员 ) , <code>[]</code> ( 下标 ) , <code>-&gt;</code> ( 指针 ) .</p>
 
     </div>
     
